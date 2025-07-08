@@ -1,8 +1,3 @@
-<section>
-  <img id="sacredCenter" src="assets/divine feminine is awakening with sacred geometry intertwined with cosmic vibrition, she is holding (1).jpeg" alt="Sacred Glyph" class="glyph" />
-  <p>"A Lemurian pulse encoded in light..."</p>
-</section>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,19 +14,36 @@
       opacity: 0;
       animation: fadeIn 3s ease-in forwards;
     }
+
     @keyframes fadeIn {
       to { opacity: 1; }
     }
+
     img.glyph {
       width: 320px;
       margin-top: 40px;
       transition: filter 0.5s ease;
     }
+
     p {
       max-width: 600px;
       margin: auto;
       font-size: 1.2em;
       padding: 10px;
+    }
+
+    #poem {
+      margin-top: 40px;
+    }
+
+    .line {
+      opacity: 0;
+      transition: opacity 2s ease-in;
+      font-style: italic;
+      font-size: 1.1em;
+      max-width: 600px;
+      margin: auto;
+      padding: 4px;
     }
   </style>
 </head>
@@ -42,9 +54,22 @@
   </header>
 
   <section>
-    <img id="sacredCenter" src="assets/your-image-name.jpeg" alt="Sacred Glyph" class="glyph" />
+    <img id="sacredCenter" src="assets/divine feminine is awakening with sacred geometry intertwined with cosmic vibrition, she is holding (1).jpeg" alt="Sacred Glyph" class="glyph" />
     <p>"A Lemurian pulse encoded in light..."</p>
   </section>
+
+  <div id="poem">
+    <p class="line">In the hush of forgotten oceans…</p>
+    <p class="line">A spiral stirs beneath star-borne sands…</p>
+    <p class="line">The circuitry remembers…</p>
+    <p class="line">Glyphs glowing with Lemurian breath…</p>
+    <p class="line">Awaken, traveler…</p>
+    <p class="line">Your pulse syncs with encoded light…</p>
+    <p class="line">Symbols whisper of origin…</p>
+    <p class="line">Where geometry sang and memory became sound.</p>
+  </div>
+
+  <audio id="narration" src="assets/lemurian-memory.mp3" autoplay></audio>
 
   <script>
     const centerGlyph = document.getElementById("sacredCenter");
@@ -55,6 +80,19 @@
         centerGlyph.style.filter = "none";
       }, 800);
     }, 1600);
+
+    const lines = document.querySelectorAll(".line");
+
+    lines.forEach((line, index) => {
+      setTimeout(() => {
+        line.style.opacity = 1;
+      }, 1500 * (index + 1));
+    });
+
+    window.addEventListener("load", () => {
+      const narration = document.getElementById("narration");
+      narration.play();
+    });
   </script>
 </body>
 </html>
