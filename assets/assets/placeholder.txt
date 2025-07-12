@@ -21,3 +21,15 @@
 .symbol-card:hover img[alt="Fire Glyph"] {
   filter: drop-shadow(0 0 22px #ff4500);
 }
+<div class="symbol-card">
+  <img src="assets/glyph-ether.png" alt="Ether Glyph">
+  <div class="symbol-caption">“The silent pulse that binds all memory and motion.”</div>
+</div>
+.symbol-card img[alt="Ether Glyph"] {
+  filter: drop-shadow(0 0 16px #d6caff);
+  transition: filter 0.4s ease;
+}
+
+.symbol-card:hover img[alt="Ether Glyph"] {
+  filter: drop-shadow(0 0 24px #f2e7ff);
+}
