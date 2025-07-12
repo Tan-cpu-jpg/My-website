@@ -1,3 +1,65 @@
+<head>
+  <style>
+    /* ✨ Start Sanctum CSS ✨ */
+    .sanctum {
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(to bottom, #0e0b1d, #1c102a);
+      color: #fbeaff;
+    }
+
+    .sanctum h2 {
+      font-size: 2.4rem;
+      margin-bottom: 40px;
+      letter-spacing: 2px;
+    }
+
+    .symbol-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .symbol-card {
+      position: relative;
+      width: 220px;
+      transition: transform 0.4s ease;
+    }
+
+    .symbol-card:hover {
+      transform: scale(1.08);
+    }
+
+    .symbol-card img {
+      width: 100%;
+      filter: drop-shadow(0 0 12px #b388ff);
+    }
+
+    .symbol-caption {
+      position: absolute;
+      bottom: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(30, 20, 40, 0.8);
+      color: #fbeaff;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.95rem;
+      opacity: 0;
+      transition: opacity 0.6s ease;
+      max-width: 200px;
+      text-align: center;
+    }
+
+    .symbol-card:hover .symbol-caption {
+      opacity: 1;
+    }
+    /* ✨ End Sanctum CSS ✨ */
+  </style>
+</head>
+
 <audio id="ambientSound" autoplay loop>
   <source src="assets/luminis.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
