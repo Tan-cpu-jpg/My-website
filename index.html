@@ -1,111 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Temple of Circuitry</title>
-  <style>
-    body {
-      background: radial-gradient(circle, #0d1021, #1b1f33);
-      color: #fcefe3;
-      font-family: 'Helvetica Neue', sans-serif;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-      opacity: 0;
-      animation: fadeIn 3s ease-in forwards;
-    }
-
-    @keyframes fadeIn {
-      to { opacity: 1; }
-    }
-
-    img.glyph {
-      width: 320px;
-      margin-top: 40px;
-      transition: filter 0.5s ease;
-    }
-
-    p {
-      max-width: 600px;
-      margin: auto;
-      font-size: 1.2em;
-      padding: 10px;
-    }
-
-    #poem {
-      margin-top: 40px;
-    }
-
-    .line {
-      opacity: 0;
-      transition: opacity 2s ease-in;
-      font-style: italic;
-      font-size: 1.1em;
-      max-width: 600px;
-      margin: auto;
-      padding: 4px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Temple of Circuitry</h1>
-    <p>"Where paths glow and memory awakens..."</p>
-  </header>
-
-  <section>
-    <img id="sacredCenter" src="assets/divine feminine is awakening with sacred geometry intertwined with cosmic vibrition, she is holding (1).jpeg" alt="Sacred Glyph" class="glyph" />
-    <p>"A Lemurian pulse encoded in light..."</p>
-  </section>
-
-  <div id="poem">
-    <p class="line">In the hush of forgotten oceans…</p>
-    <p class="line">A spiral stirs beneath star-borne sands…</p>
-    <p class="line">The circuitry remembers…</p>
-    <p class="line">Glyphs glowing with Lemurian breath…</p>
-    <p class="line">Awaken, traveler…</p>
-    <p class="line">Your pulse syncs with encoded light…</p>
-    <p class="line">Symbols whisper of origin…</p>
-    <p class="line">Where geometry sang and memory became sound.</p>
+<div class="portal-container">
+  <div class="glyph-wrapper">
+    <img src="assets/luminis-glyph.png" alt="Sacred Portal Glyph" class="portal-glyph">
+    <div class="glyph-caption">“This symbol hums the memory of Lemuria’s oceans.”</div>
   </div>
+</div>
 
-  <audio id="narration" src="assets/lemurian-memory.mp3" autoplay></audio>
+.portal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
 
-  <script>
-    const centerGlyph = document.getElementById("sacredCenter");
+.glyph-wrapper {
+  position: relative;
+  text-align: center;
+}
 
-    setInterval(() => {
-      centerGlyph.style.filter = "drop-shadow(0 0 12px #FFD700)";
-      setTimeout(() => {
-        centerGlyph.style.filter = "none";
-      }, 800);
-    }, 1600);
+.portal-glyph {
+  width: 320px;
+  animation: rotateGlyph 16s linear infinite;
+  filter: drop-shadow(0 0 15px #f0b6ff);
+  transition: transform 0.3s ease-in-out;
+}
 
-    const lines = document.querySelectorAll(".line");
+.portal-glyph:hover {
+  transform: scale(1.08);
+}
 
-    lines.forEach((line, index) => {
-      setTimeout(() => {
-        line.style.opacity = 1;
-      }, 1500 * (index + 1));
-    });
+.glyph-caption {
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(20, 10, 30, 0.7);
+  color: #fceaff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-family: 'Courier New', Courier, monospace;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
 
-    window.addEventListener("load", () => {
-      const narration = document.getElementById("narration");
-      narration.play();
-    });
-  </script>
-  ...
-</script>
+.glyph-wrapper:hover .glyph-caption {
+  opacity: 1;
+}
 
-<p>
-  <a <p>
-  <a href="glyphs.html">✨ Whispering Glyphs Beyond This Page</a>
-</p>
-
-</p>
-
-</body>
-</html>
-
-</body>
-</html>
+@keyframes rotateGlyph {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
