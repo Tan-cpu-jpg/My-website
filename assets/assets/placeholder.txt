@@ -12,3 +12,12 @@
 .symbol-card:hover img[alt="Fire Glyph"] {
   filter: drop-shadow(0 0 22px #ff4500);
 }
+
+.symbol-card img[alt="Fire Glyph"] {
+  filter: drop-shadow(0 0 14px #ff9966);
+  transition: filter 0.4s ease;
+}
+
+.symbol-card:hover img[alt="Fire Glyph"] {
+  filter: drop-shadow(0 0 22px #ff4500);
+}
