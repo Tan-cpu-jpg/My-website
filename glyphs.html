@@ -22,6 +22,30 @@
     encoded with intention and bathed in ambient wonder.
   </p>
 </div>
+.line {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(40, 30, 60, 0.8);
+  color: #f9dfff;
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  padding: 8px 14px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #a088ff;
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  max-width: 200px;
+  text-align: center;
+  pointer-events: none;
+}
+
+/* Reveal when glyph is hovered */
+.glyph:hover + .line {
+  opacity: 1;
+  transform: translateY(-10px);
+}
 
 <section>
   <img src="assets/your-glyph-image-1.jpeg" alt="Lemurian Glyph 1" class="glyph">
