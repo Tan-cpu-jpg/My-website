@@ -44,6 +44,28 @@
       width: 100%;
       filter: drop-shadow(0 0 12px #b388ff);
     }
+.symbol-caption {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(30, 20, 40, 0.8);
+  color: #fbeaff;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  max-width: 220px;
+  text-align: center;
+  box-shadow: 0 0 12px #a175ff;
+}
+
+.symbol-card:hover .symbol-caption {
+  opacity: 1;
+  transform: translateY(-10px);
+}
 
     .symbol-caption {
       position: absolute;
