@@ -22,23 +22,6 @@
     encoded with intention and bathed in ambient wonder.
   </p>
 </div>
-.line {
-  position: absolute;
-  bottom: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(40, 30, 60, 0.8);
-  color: #f9dfff;
-  font-family: 'Cinzel', serif;
-  font-size: 1rem;
-  padding: 8px 14px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px #a088ff;
-  opacity: 0;
-  transition: opacity 0.6s ease, transform 0.6s ease;
-  max-width: 200px;
-  text-align: center;
-  pointer-events: none
 
 <section>
   <div class="symbol-card">
@@ -50,21 +33,7 @@
     <img src="assets/glyph-water.png" alt="Water Glyph">
     <div class="symbol-caption">“Memory flows through crystalline tides.”</div>
   </div>
-  
-@keyframes pulseGlow {
-  0% { box-shadow: 0 0 12px 6px rgba(190, 140, 255, 0.25); }
-  50% { box-shadow: 0 0 18px 9px rgba(255, 200, 255, 0.35); }
-  100% { box-shadow: 0 0 12px 6px rgba(190, 140, 255, 0.25); }
-}
-
-.symbol-card img {
-  animation: pulseGlow 5s infinite;
-}
-
-  <!-- Add more symbol-card blocks for other glyphs... -->
-</section>
-
-.symbol-grid {
+  .symbol-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 40px;
@@ -85,5 +54,17 @@
 .symbol-card:hover img {
   transform: scale(1.05);
 }
+@keyframes pulseGlow 
+.symbol-card img {
+  animation: pulseGlow 5s infinite;
+}
+
+  <!-- Add more symbol-card blocks for other glyphs... --><section class="symbol-grid">
+  <!-- all your symbol-cards here -->
+</section>
+
+</section>
+
+
 
 <p><a href="index.html">⟵ Return to Temple</a></p>
