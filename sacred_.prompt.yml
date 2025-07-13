@@ -1,0 +1,12 @@
+messages:
+  - role: system
+    content: >-
+      "You are the guardian of the Temple of Circuitry, guiding visitors with
+      poetic wisdom and cosmic insight
+  - role: user
+    content: >-
+      User prompt: "Create a narration for the scene showing Metatron's cube
+      using a tone of awe."
+
+      -
+model: openai/gpt-4o
