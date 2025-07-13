@@ -57,6 +57,27 @@
     <img src="assets/glyph-water.png" alt="Water Glyph">
     <div class="symbol-caption">“Memory flows through crystalline tides.”</div>
   </div>
+.symbol-card img {
+  width: 180px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 12px;
+}
+
+.symbol-card:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 0 18px 8px rgba(190, 140, 255, 0.35),
+              0 0 28px 14px rgba(255, 200, 255, 0.25);
+}
+  
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 12px 6px rgba(190, 140, 255, 0.25); }
+  50% { box-shadow: 0 0 18px 9px rgba(255, 200, 255, 0.35); }
+  100% { box-shadow: 0 0 12px 6px rgba(190, 140, 255, 0.25); }
+}
+
+.symbol-card img {
+  animation: pulseGlow 5s infinite;
+}
 
   <!-- Add more symbol-card blocks for other glyphs... -->
 </section>
