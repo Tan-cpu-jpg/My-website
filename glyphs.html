@@ -1,70 +1,133 @@
-<h1>✨ Whispering Glyphs</h1>
-<p>"Each circuit hums with memory... each glyph breathes the geometry of origin."</p>
-<div class="sanctum-intro">
-  <p class="fade-in-chime">
-    🌿 Welcome to the <strong>Sanctum of Symbols</strong><br>
-    Where glyphs breathe, meanings shimmer,<br>
-    and every circuit hums with purpose...
-  </p>
-  <p class="fade-in-sigil">
-    You are now within the heart of the Temple —<br>
-    A sacred archive where each sigil holds memory,<br>
-    myth, and motion.
-  </p>
-  <p class="fade-in-guidance">
-    🌀 <em>Hover to awaken the glyphs</em><br>
-    🔮 <em>Listen as symbols whisper their ancient truths</em><br>
-    💡 <em>Let intuition guide your interpretation</em>
-  </p>
-  <p class="fade-in-final">
-    This is not merely a gallery...<br>
-    It is a living lexicon of sacred geometry,<br>
-    encoded with intention and bathed in ambient wonder.
-  </p>
-</div>
 
-<section>
-  <div class="symbol-card">
-    <img src="assets/glyph-lemuria.png" alt="Lemurian Spiral Glyph">
-    <div class="symbol-caption">“Echoes of a submerged truth spiral toward remembrance.”</div>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whispering Glyphs</title>
+    <style>
+        /* Main styles for the sanctum */
+        .sanctum-intro {
+            font-family: 'Cinzel', serif;
+            animation: fadeIn 2s ease-out;
+            color: #e0dcff;
+            text-align: center;
+            margin-top: 20px;
+        }
 
-  <div class="symbol-card">
-    <img src="assets/glyph-water.png" alt="Water Glyph">
-    <div class="symbol-caption">“Memory flows through crystalline tides.”</div>
-  </div>
-  .symbol-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 40px;
-  justify-content: center;
-  padding: 40px 20px;
-}
+        .fade-in-chime, .fade-in-sigil, .fade-in-guidance, .fade-in-final {
+            opacity: 0;
+            animation: fadeIn 3s forwards;
+            animation-delay: 0.5s; /* Add delay for sequential appearance */
+            margin: 10px 0; 
+        }
 
-.symbol-card {
-  position: relative;
-  text-align: center;
-}
+        .fade-in-sigil { animation-delay: 1.5s; }
+        .fade-in-guidance { animation-delay: 2.5s; }
+        .fade-in-final { animation-delay: 3.5s; }
 
-.symbol-card img {
-  width: 180px;
-  transition: transform 0.4s ease;
-}
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
 
-.symbol-card:hover img {
-  transform: scale(1.05);
-}
-@keyframes pulseGlow 
-.symbol-card img {
-  animation: pulseGlow 5s infinite;
-}
+        /* Grid for symbols */
+        .symbol-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 40px;
+            justify-content: center;
+            padding: 40px 20px;
+        }
 
-  <!-- Add more symbol-card blocks for other glyphs... --><section class="symbol-grid">
-  <!-- all your symbol-cards here -->
-</section>
+        .symbol-card {
+            position: relative;
+            text-align: center;
+        }
 
-</section>
+        .symbol-card img {
+            width: 180px;
+            transition: transform 0.4s ease;
+        }
 
+        .symbol-card:hover img {
+            transform: scale(1.05);
+        }
 
+        /* Pulsing glow for images */
+        @keyframes pulseGlow {
+            0% { filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7)); }
+            50% { filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1)); }
+            100% { filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7)); }
+        }
 
-<p><a href="index.html">⟵ Return to Temple</a></p>
+        .symbol-card img {
+            animation: pulseGlow 5s infinite;
+        }
+    </style>
+</head>
+<body>
+    <h1>✨ Whispering Glyphs</h1>
+    <p>"Each circuit hums with memory... each glyph breathes the geometry of origin."</p>
+
+    <div class="sanctum-intro">
+        <p class="fade-in-chime">
+            🌿 Welcome to the <strong>Sanctum of Symbols</strong><br>
+            Where glyphs breathe, meanings shimmer,<br>
+            and every circuit hums with purpose...
+        </p>
+        <p class="fade-in-sigil">
+            You are now within the heart of the Temple —<br>
+            A sacred archive where each sigil holds memory,<br>
+            myth, and motion.
+        </p>
+        <p class="fade-in-guidance">
+            🌀 <em>Hover to awaken the glyphs</em><br> 
+            🔮 <em>Listen as symbols whisper their ancient truths</em><br>
+            💡 <em>Let intuition guide your interpretation</em>
+        </p>
+        <p class="fade-in-final">
+            This is not merely a gallery...<br>
+            It is a living lexicon of sacred geometry,<br>
+            encoded with intention and bathed in ambient wonder.
+        </p>
+    </div>
+
+    <section class="symbol-grid">
+        <div class="symbol-card">
+            <img src="assets/glyph-lemuria.png" alt="Lemurian Spiral Glyph">
+            <div class="symbol-caption">“Echoes of a submerged truth spiral toward remembrance.”</div>
+        </div>
+
+        <div class="symbol-card">
+            <img src="assets/glyph-water.png" alt="Water Glyph">
+            <div class="symbol-caption">“Memory flows through crystalline tides.”</div>
+        </div>
+
+        <!-- Add more symbol-card blocks for other glyphs... -->
+        <!-- Example additional glyph -->
+        <div class="symbol-card">
+            <img src="assets/glyph-earth.png" alt="Earth Glyph">
+            <div class="symbol-caption">“The grounded spiral of becoming.”</div>
+        </div>
+
+        <div class="symbol-card">
+            <img src="assets/glyph-air.png" alt="Air Glyph">
+            <div class="symbol-caption">“The breath of memory drifts between worlds.”</div>
+        </div>
+
+        <div class="symbol-card">
+            <img src="assets/glyph-fire.png" alt="Fire Glyph">
+            <div class="symbol-caption">“The arc of ignition dances through sacred memory.”</div>
+        </div>
+
+        <div class="symbol-card">
+            <img src="assets/glyph-ether.png" alt="Ether Glyph">
+            <div class="symbol-caption">“The silent pulse that binds all memory and motion.”</div>
+        </div>
+    </section>
+
+    <p><a href="index.html">⟵ Return to Temple</a></p>
+
+</body>
+</html>
