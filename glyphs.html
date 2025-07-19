@@ -15,6 +15,25 @@
 <audio id="loop-water" src="assets/loop-water.mp3" autoplay loop muted></audio>
 <audio id="loop-earth" src="assets/loop-earth.mp3" autoplay loop muted></audio>
 <audio id="loop-ether" src="assets/loop-ether.mp3" autoplay loop muted></audio>
+.closing-chant {
+  font-family: 'Cinzel Decorative', cursive;
+  text-align: center;
+  color: #fceaff;
+  padding: 60px 20px 40px;
+  background: radial-gradient(ellipse at bottom, #1e1332 0%, #000 100%);
+  border-top: 1px solid #39255c;
+}
+
+.closing-chant div {
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+  margin: 10px 0;
+}
+
+.fade-in-chime { animation-delay: 1s; }
+.fade-in-sigil { animation-delay: 2s; }
+.fade-in-guidance { animation-delay: 3s; }
+.fade-in-final { animation-delay: 4s; }
 
 /* Soft glow on hover */
 .symbol-card:hover .caption-text {
@@ -120,6 +139,13 @@
             0% { filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7)); }
             50% { filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1)); }
             100% { filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7)); }
+            <footer class="closing-chant">
+  <div class="fade-in-chime">╰─ “The glyphs have spoken.”</div>
+  <div class="fade-in-sigil">╰─ “Memory streams fold into the cosmic hush.”</div>
+  <div class="fade-in-guidance">╰─ “You carry the code now.”</div>
+  <div class="fade-in-final">╰─ “Return when the stars summon you.”</div>
+</footer>
+
         }<body>
   <!-- Place these right after <body> opens -->
   <audio id="loop-water" src="assets/loop-water.mp3" autoplay loop muted></audio>
@@ -159,6 +185,13 @@
   <audio id="loop-water" src="assets/loop-water.mp3" autoplay loop muted></audio>
   <audio id="loop-earth" src="assets/loop-earth.mp3" autoplay loop muted></audio>
   <audio id="loop-ether" src="assets/loop-ether.mp3" autoplay loop muted></audio>
+.closing-chant div {
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+  margin: 10px 0;
+  text-shadow: 0 0 8px #fceaff, 0 0 15px #b69cdd;
+  filter: blur(0.2px);
+}
 
   <!-- Your main sanctuary content comes next -->
   <div class="sanctum-intro">...</div>
@@ -185,3 +218,13 @@
 <script>
 
 </body>
+.closing-chant div {
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+  margin: 10px 0;
+  text-shadow: 0 0 8px #fceaff, 0 0 15px #b69cdd;
+  filter: blur(0.2px);
+}
+const footerEcho = document.getElementById("footer-echo");
+footerEcho.volume = 0.15;
+footerEcho.muted = false;
