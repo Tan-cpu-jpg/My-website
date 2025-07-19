@@ -12,6 +12,9 @@
   animation: fadeUp 2.5s ease-out forwards;
   animation-delay: 3.5s;
 }
+<audio id="loop-water" src="assets/loop-water.mp3" autoplay loop muted></audio>
+<audio id="loop-earth" src="assets/loop-earth.mp3" autoplay loop muted></audio>
+<audio id="loop-ether" src="assets/loop-ether.mp3" autoplay loop muted></audio>
 
 /* Soft glow on hover */
 .symbol-card:hover .caption-text {
@@ -117,7 +120,34 @@
             0% { filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7)); }
             50% { filter: drop-shadow(0 0 15px rgba(255, 255, 255, 1)); }
             100% { filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7)); }
-        }
+        }<body>
+  <!-- Place these right after <body> opens -->
+  <audio id="loop-water" src="assets/loop-water.mp3" autoplay loop muted></audio>
+  <audio id="loop-earth" src="assets/loop-earth.mp3" autoplay loop muted></audio>
+  <audio id="loop-ether" src="assets/loop-ether.mp3" autoplay loop muted></audio>
+
+  <!-- Your main sanctuary content comes next -->
+  <div class="sanctum-intro">...</div>
+  <section class="symbol-grid">...</section>
+
+  <!-- Place the unmute + volume script just before </body> -->
+  <script>
+    window.addEventListener("load", () => {
+      const water = document.getElementById("loop-water");
+      const earth = document.getElementById("loop-earth");
+      const ether = document.getElementById("loop-ether");
+
+      water.volume = 0.3;
+      earth.volume = 0.2;
+      ether.volume = 0.1;
+
+      water.muted = false;
+      earth.muted = false;
+      ether.muted = false;
+    });
+  </script>
+</body>
+
 
         .symbol-card img {
             animation: pulseGlow 5s infinite;
@@ -125,67 +155,33 @@
     </style>
 </head>
 <body>
-    <h1>✨ Whispering Glyphs</h1>
-    <p>"Each circuit hums with memory... each glyph breathes the geometry of origin."</p>
+  <!-- Place these right after <body> opens -->
+  <audio id="loop-water" src="assets/loop-water.mp3" autoplay loop muted></audio>
+  <audio id="loop-earth" src="assets/loop-earth.mp3" autoplay loop muted></audio>
+  <audio id="loop-ether" src="assets/loop-ether.mp3" autoplay loop muted></audio>
 
-    <div class="sanctum-intro">
-        <p class="fade-in-chime">
-            🌿 Welcome to the <strong>Sanctum of Symbols</strong><br>
-            Where glyphs breathe, meanings shimmer,<br>
-            and every circuit hums with purpose...
-        </p>
-        <p class="fade-in-sigil">
-            You are now within the heart of the Temple —<br>
-            A sacred archive where each sigil holds memory,<br>
-            myth, and motion.
-        </p>
-        <p class="fade-in-guidance">
-            🌀 <em>Hover to awaken the glyphs</em><br> 
-            🔮 <em>Listen as symbols whisper their ancient truths</em><br>
-            💡 <em>Let intuition guide your interpretation</em>
-        </p>
-        <p class="fade-in-final">
-            This is not merely a gallery...<br>
-            It is a living lexicon of sacred geometry,<br>
-            encoded with intention and bathed in ambient wonder.
-        </p>
-    </div>
+  <!-- Your main sanctuary content comes next -->
+  <div class="sanctum-intro">...</div>
+  <section class="symbol-grid">...</section>
 
-    <section class="symbol-grid">
-        <div class="symbol-card">
-            <img src="assets/glyph-lemuria.png" alt="Lemurian Spiral Glyph">
-            <div class="symbol-caption">“Echoes of a submerged truth spiral toward remembrance.”</div>
-        </div>
+  <!-- Place the unmute + volume script just before </body> -->
+  <script>
+    window.addEventListener("load", () => {
+      const water = document.getElementById("loop-water");
+      const earth = document.getElementById("loop-earth");
+      const ether = document.getElementById("loop-ether");
 
-        <div class="symbol-card">
-            <img src="assets/glyph-water.png" alt="Water Glyph">
-            <div class="symbol-caption">“Memory flows through crystalline tides.”</div>
-        </div>
+      water.volume = 0.3;
+      earth.volume = 0.2;
+      ether.volume = 0.1;
 
-        <!-- Add more symbol-card blocks for other glyphs... -->
-        <!-- Example additional glyph -->
-        <div class="symbol-card">
-            <img src="assets/glyph-earth.png" alt="Earth Glyph">
-            <div class="symbol-caption">“The grounded spiral of becoming.”</div>
-        </div>
+      water.muted = false;
+      earth.muted = false;
+      ether.muted = false;
+    });
+  </script>
+</body>
 
-        <div class="symbol-card">
-            <img src="assets/glyph-air.png" alt="Air Glyph">
-            <div class="symbol-caption">“The breath of memory drifts between worlds.”</div>
-        </div>
-
-        <div class="symbol-card">
-            <img src="assets/glyph-fire.png" alt="Fire Glyph">
-            <div class="symbol-caption">“The arc of ignition dances through sacred memory.”</div>
-        </div>
-
-        <div class="symbol-card">
-            <img src="assets/glyph-ether.png" alt="Ether Glyph">
-            <div class="symbol-caption">“The silent pulse that binds all memory and motion.”</div>
-        </div>
-    </section>
-
-    <p><a href="index.html">⟵ Return to Temple</a></p>
+<script>
 
 </body>
-</html>
