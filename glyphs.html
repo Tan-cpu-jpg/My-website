@@ -2,6 +2,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    .caption-text {
+  font-family: 'Cormorant Garamond', serif;
+  color: #fceaff;
+  font-size: 1.1em;
+  margin-top: 8px;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeUp 2.5s ease-out forwards;
+  animation-delay: 3.5s;
+}
+
+/* Soft glow on hover */
+.symbol-card:hover .caption-text {
+  text-shadow: 0 0 12px #ffebf8;
+  color: #ffe6fb;
+}
+
+/* Fade in softly from below */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whispering Glyphs</title>
@@ -44,7 +73,35 @@
         .symbol-card {
             position: relative;
             text-align: center;
-        }
+     .caption-text {
+  font-family: 'Cormorant Garamond', serif;
+  color: #fceaff;
+  font-size: 1.1em;
+  margin-top: 8px;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeUp 2.5s ease-out forwards;
+  animation-delay: 3.5s;
+}
+
+/* Soft glow on hover */
+.symbol-card:hover .caption-text {
+  text-shadow: 0 0 12px #ffebf8;
+  color: #ffe6fb;
+}
+
+/* Fade in softly from below */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+   }
 
         .symbol-card img {
             width: 180px;
