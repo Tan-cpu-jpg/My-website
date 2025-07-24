@@ -2,10 +2,13 @@
 
     /* ✨ Start Sanctum CSS ✨ */
     .sanctum {
+    
       padding: 80px 20px;
       text-align: center;
       background: linear-gradient(to bottom, #0e0b1d, #1c102a);
       color
+    
+    text-shadow: 0 0 4px #c8aaff, 0 0 8px #a88ce7;
 
       <style>/* Sanctum Intro Base Styling */
 .sanctum-intro {
@@ -14,6 +17,25 @@
   font-family: 'Cinzel', serif;
   margin-top: 60px;
   animation: fadeIn 2s ease-out;
+}.symbol-caption {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(30, 20, 40, 0.8);
+  color: #fbeaff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  max-width: 200px;
+  text-align: center;
+}
+
+.symbol-card:hover .symbol-caption {
+  opacity: 1;
 }
     }
     .symbol-card img {
@@ -65,7 +87,6 @@
     }
    
   </style>
-</head>
 
 <audio id="ambientSound" autoplay loop>
   <source src="assets/luminis.mp3" type="audio/mpeg">
@@ -78,6 +99,7 @@
     <div class="glyph-caption">“This symbol hums the memory of Lemuria’s oceans.”</div>
   </div>
 </div>
+
 <!-- 🔥 Fire Glyph -->
 <div class="symbol-card">
   <img src="assets/glyph-fire.png" alt="Fire Glyph">
@@ -147,6 +169,7 @@
 <section class="sanctum">
   <h2>Sanctum of Symbols</h2>
   <div class="symbol-grid">
+      
 <!-- Earth Glyph -->
 <div class="symbol-card">
   <img src="assets/glyph-earth.png" alt="Earth Glyph">
